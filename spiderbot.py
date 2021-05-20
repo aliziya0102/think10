@@ -11,8 +11,8 @@ browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
 base_url = "https://pop-music.ir/"
 filter_آهنگ = True # آهنگ have multiple speakers
 
-if not os.path.exists('conference_audio'):
-    os.makedirs('conference_audio')
+if not os.path.exists('audio'):
+    os.makedirs('audio')
 
 def extract_audio(url):
     global browser, filter_آهنگ

@@ -50,7 +50,7 @@ def extract_audio(url):
                 print("Mañanera detected. Skipping...\n")
                 continue
 
-            if os.path.isfile('conference_audio/'+file_name[:-4]+'.wav'):
+            if os.path.isfile('audio/'+file_name[:-4]+'.wav'):
                 print("File already exists","\n")            
                 continue
 

@@ -9,13 +9,13 @@ import time
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
 base_url = "https://www.yazdinews.ir/category/%da%86%d9%86%d8%af-%d8%b1%d8%b3%d8%a7%d9%86%d9%87-%d8%a7%db%8c/%d9%81%d8%a7%db%8c%d9%84-%d8%b5%d9%88%d8%aa%db%8c/"
-filter_mornings = True # mornings 
+filter_دانلود = True # دانلود 
 
 if not os.path.exists('audio'):
     os.makedirs('audio')
 
 def extract_audio(url):
-    global browser, filter_mornings
+    global browser, filter_دانلود
 
     try:
 
@@ -46,7 +46,7 @@ def extract_audio(url):
             print("Audio file located:", audio_url)        
             file_name = audio_url.split('/')[-1]
             
-            if filter_mañaneras and (file_name.startswith("20") or "matutina" in file_name): # Mañaneras files names usually start with 20
+            if filter_دانلود and (file_name.startswith("20") or "matutina" in file_name): # Mañaneras files names usually start with 20
                 print("Mañanera detected. Skipping...\n")
                 continue
 

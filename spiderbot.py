@@ -8,7 +8,7 @@ import time
 
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
-base_url = "https://lopezobrador.org.mx/secciones/comunicados/"
+base_url = "https://channelbpodcast.com/episodes"
 filter_mañaneras = True # Mañaneras have multiple speakers
 
 if not os.path.exists('conference_audio'):

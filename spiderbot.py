@@ -46,8 +46,8 @@ def extract_audio(url):
             print("Audio file located:", audio_url)        
             file_name = audio_url.split('/')[-1]
             
-            if filter_دانلود and (file_name.startswith("20") or "matutina" in file_name): # Mañaneras files names usually start with 20
-                print("Mañanera detected. Skipping...\n")
+            if filter_دانلود and (file_name.startswith("20") or "دانلود" in file_name): # دانلود files names usually start with 20
+                print("دانلود detected. Skipping...\n")
                 continue
 
             if os.path.isfile('audio/'+file_name[:-4]+'.wav'):
@@ -58,7 +58,7 @@ def extract_audio(url):
             response = requests.get(audio_url)        
 
             if response.ok:
-                file_path = 'conference_audio/'+file_name             
+                file_path = 'audio/'+file_name             
                 with open(file_path, 'wb') as file:
                     file.write(response.content)
                     print("Successfuly saved as:", file_path, "\n")

@@ -9,7 +9,7 @@ import time
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
 base_url = "https://pop-music.ir/"
-filter_ehsan = True # Ehsan have multiple speakers
+filter_ehsan = True # Ehsan 
 
 if not os.path.exists('audio'):
     os.makedirs('audio')

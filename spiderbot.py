@@ -8,7 +8,7 @@ import time
 
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
-base_url = "https://channelbpodcast.com/episodes"
+base_url = "https://www.yjc.news/fa/list/11"
 filter_دانلود = True # دانلود have multiple speakers
 
 if not os.path.exists('conference_audio'):

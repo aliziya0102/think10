@@ -9,13 +9,13 @@ import time
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
 base_url = "https://www.yjc.news/fa/multimedia/144"
-filter_دانلود = True # دانلود 
+filter_320 = True # 320 
 
 if not os.path.exists('audio'):
     os.makedirs('audio')
 
 def extract_audio(url):
-    global browser, filter_دانلود
+    global browser, filter_320
 
     try:
 
@@ -46,8 +46,8 @@ def extract_audio(url):
             print("Audio file located:", audio_url)        
             file_name = audio_url.split('/')[-1]
             
-            if filter_دانلود and (file_name.startswith("20") or "دانلود" in file_name): # دانلود files names usually start with 20
-                print("دانلود detected. Skipping...\n")
+            if filter_320 and (file_name.startswith("20") or "320" in file_name): # 320 files names usually start with 20
+                print("320 detected. Skipping...\n")
                 continue
 
             if os.path.isfile('audio/'+file_name[:-4]+'.wav'):

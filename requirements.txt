@@ -1,0 +1,8 @@
+mechanicalsoup
+requests
+librosa
+soundfile
+pydub
+google-cloud-speech
+google-cloud-storage
+num2words

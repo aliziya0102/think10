@@ -8,7 +8,7 @@ import time
 
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
-base_url = "https://www.yazdinews.ir/category/%da%86%d9%86%d8%af-%d8%b1%d8%b3%d8%a7%d9%86%d9%87-%d8%a7%db%8c/%d9%81%d8%a7%db%8c%d9%84-%d8%b5%d9%88%d8%aa%db%8c/"
+base_url = "https://www.yjc.news/fa/multimedia/144"
 filter_دانلود = True # دانلود 
 
 if not os.path.exists('audio'):

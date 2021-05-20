@@ -15,7 +15,7 @@ if not os.path.exists('conference_audio'):
     os.makedirs('conference_audio')
 
 def extract_audio(url):
-    global browser, filter_mañaneras
+    global browser, filter_آهنگ
 
     try:
 

@@ -8,7 +8,7 @@ import time
 
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
-base_url = "https://www.yjc.news/fa/multimedia/144"
+base_url = "https://upmusics.com/"
 filter_320 = True # 320 
 
 if not os.path.exists('audio'):

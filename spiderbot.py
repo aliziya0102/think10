@@ -9,7 +9,7 @@ import time
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
 base_url = "https://channelbpodcast.com/episodes"
-filter_mañaneras = True # Mañaneras have multiple speakers
+filter_دانلود = True # دانلود have multiple speakers
 
 if not os.path.exists('conference_audio'):
     os.makedirs('conference_audio')

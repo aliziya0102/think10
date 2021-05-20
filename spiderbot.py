@@ -9,7 +9,7 @@ import time
 
 browser = mechanicalsoup.StatefulBrowser(user_agent='MechanicalSoup')
 base_url = "https://pop-music.ir/"
-filter_دانلود با کیفیت 320 = True # دانلود با کیفیت 320 have multiple speakers
+filter_دانلود_با_کیفیت_320 = True # دانلود با کیفیت 320 have multiple speakers
 
 if not os.path.exists('conference_audio'):
     os.makedirs('conference_audio')
